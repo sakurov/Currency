@@ -120,7 +120,7 @@ class CurrencyRowController: NSObject {
             
             func uiColor() -> UIColor {
                 switch self {
-                case .green: return UIColor.green
+                case .green: return UIColor.green.withAlphaComponent(0.85)
                 case .white: return UIColor.white
                 case .red:   return UIColor.red
                 }
@@ -134,8 +134,6 @@ class CurrencyRowController: NSObject {
         }
         return DiffColor.white.uiColor()
     }
-        
-        
 }
 
 class UpdatedRowController: NSObject {
