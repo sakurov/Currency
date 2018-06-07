@@ -1,0 +1,994 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03D07E2BF08D9F1D2DD35F601B870D03 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F5E0CFC384D3F875984C7232231A66 /* MultipartFormData.swift */; };
+		06E74605750CCD28617BFDB5AB766528 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE3B5C2A900E3F0E1DABA1D4E65E43D /* Response.swift */; };
+		08BF56F2B8324E2E804B2467EAAC356B /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B899ECF21191C03E648F2FF5D27CB5AF /* TaskDelegate.swift */; };
+		099297A0628BAC20F1F9F7C7E2D1552B /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A20FB8F396BBEA3C3FC773C1EA3B98 /* Notifications.swift */; };
+		1FD137B9C8DB27E8B1758711A725BEB5 /* Alamofire-watchOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 506B0F72ED1E868A4FBA5D9464760BFC /* Alamofire-watchOS-dummy.m */; };
+		26A890304C5793BF8F1F16F290C22CB1 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BBA44D2F62396DA3FE5890E33D5846 /* Timeline.swift */; };
+		29563E581C50753801C2BD34435DB608 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51E42EB14C0F2D87AF84BD5093E5C97 /* DispatchQueue+Alamofire.swift */; };
+		2CE0939239CE7E003EABC740D3894CED /* Alamofire-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F3687611CC380E6B4B05D3304A537AF2 /* Alamofire-iOS-dummy.m */; };
+		30E3A932E6C98BEF3CFBB612F0EF745C /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2621A9E1BFC8A44436E9282D50521F5 /* Validation.swift */; };
+		41399A1E3D3BB00E5C3796A136800BB2 /* Alamofire-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DF40CFF8C610B49000F2BE7A94577B2B /* Alamofire-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4295ADAEFAE817A0287D38A603A9573A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0FDE7E6C756FE51216AA3F19811305B /* Foundation.framework */; };
+		4855C43031E72220A3937326DA8127DB /* Pods-CurrencyWatchApp Extension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AF3338897A717B97A184031D81A8889C /* Pods-CurrencyWatchApp Extension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4AD9400617A3C3E3E9FB8FAE8FDEF6EE /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BBA44D2F62396DA3FE5890E33D5846 /* Timeline.swift */; };
+		4C8FF0FAFFBC0BB1AD72C30DBD06C17B /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D751A458AA5641124C85C881C128A0BB /* SessionManager.swift */; };
+		4F211C953D923D5FD30F7BEE88F92CE4 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1BCB12BACEE2AE38ADAE62E0839EEA /* Alamofire.swift */; };
+		555B0E86991BE8FEFCB0292F10437A22 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = C947B4942679F4009223A4D89D5DD7D9 /* Result.swift */; };
+		5819C72B6A933289591AF5E380AA981E /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB42E210F09FD8335D20B9894A1CA7B /* ServerTrustPolicy.swift */; };
+		588EE674CE0BEFD19F8D01A9E845C46A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76720B026417625FB62285B73CECF0BF /* Foundation.framework */; };
+		5991E162C47AFE360E7D5AE3A8EEBF89 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B899ECF21191C03E648F2FF5D27CB5AF /* TaskDelegate.swift */; };
+		5DF116EA39A8EB315EA65160D6BB9DF0 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A9C70760A1920A514B9185C550183D /* SessionDelegate.swift */; };
+		610017AA401B43AB241D006B9C3D708C /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA881D95944FF6C1D12617DE0FF5D17F /* AFError.swift */; };
+		655B22C3C0C3C3F5AF19018976BA52FF /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA881D95944FF6C1D12617DE0FF5D17F /* AFError.swift */; };
+		663D3FEC91D38CF59AE2707944CB22CB /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D751A458AA5641124C85C881C128A0BB /* SessionManager.swift */; };
+		6A37DB55DEC5540FEA003571E3BB9824 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F5E0CFC384D3F875984C7232231A66 /* MultipartFormData.swift */; };
+		703932EF779A74C0FAE64785346A0A3E /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1BCB12BACEE2AE38ADAE62E0839EEA /* Alamofire.swift */; };
+		7D7A15C112C8E4A0C187A475A79C935D /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A20FB8F396BBEA3C3FC773C1EA3B98 /* Notifications.swift */; };
+		7FA3873EFD6607719939B02B560BFCF6 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C49B30D83DB2362C4A3A8F9DC40C70A /* Request.swift */; };
+		7FBE152422B48924171CEBD382B780CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76720B026417625FB62285B73CECF0BF /* Foundation.framework */; };
+		8FA936C50C1CD7B4EC196B167BA04B61 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = C947B4942679F4009223A4D89D5DD7D9 /* Result.swift */; };
+		8FD7D6616022C01888557B8A0506FC97 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18E30F9449273E97AF1392571D2AA50 /* NetworkReachabilityManager.swift */; };
+		A1BA28434ABC4D98872C9064A24AA18B /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2621A9E1BFC8A44436E9282D50521F5 /* Validation.swift */; };
+		A9F865046BCD50D82F21FC0CBDC46077 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59DD309C9EA5CB8ED3346C752787713 /* ParameterEncoding.swift */; };
+		B068EE9DA7C493E5652BA4887207BA01 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A9C70760A1920A514B9185C550183D /* SessionDelegate.swift */; };
+		B9D4E4A35B95788AD61F64D550826424 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C49B30D83DB2362C4A3A8F9DC40C70A /* Request.swift */; };
+		BDC702B77200C1C9E8D2EFC296A8EBFB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0FDE7E6C756FE51216AA3F19811305B /* Foundation.framework */; };
+		C08E9F09701B2FF36088560A0BA4233B /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18E30F9449273E97AF1392571D2AA50 /* NetworkReachabilityManager.swift */; };
+		D6F10F27E3C306B7607251E4058DB05B /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE3B5C2A900E3F0E1DABA1D4E65E43D /* Response.swift */; };
+		D6F56F27A8DC5A0C62C145FF027FC160 /* Pods-Currency-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 658841BB6C608C05371200FCDAE69740 /* Pods-Currency-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7BE36A3F287251ED0C5518E399C3F58 /* Pods-CurrencyWatchApp Extension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6E817385E07697A496B3E35A9ED84E /* Pods-CurrencyWatchApp Extension-dummy.m */; };
+		E2CA5AD7B62C296DA7B132619BD86640 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9872A5B618EE419997B35479A9204B /* ResponseSerialization.swift */; };
+		E35EF038EB66E52EE842E0FDD41EC794 /* Alamofire-watchOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 92C8684ACEC84C41AA3A37714B7B849B /* Alamofire-watchOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E83194B1D952AA3C4D269B67327A5054 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB42E210F09FD8335D20B9894A1CA7B /* ServerTrustPolicy.swift */; };
+		F21E4EF107A6868DCB6540519D96E289 /* Pods-Currency-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FCD194AA22BF0FEAA308CCAAE6DBB48 /* Pods-Currency-dummy.m */; };
+		F4206355260A2D03E04176A2A8105C52 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59DD309C9EA5CB8ED3346C752787713 /* ParameterEncoding.swift */; };
+		F80FDB230BB5B3766EC81B67FBC02560 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51E42EB14C0F2D87AF84BD5093E5C97 /* DispatchQueue+Alamofire.swift */; };
+		F9544C87AA1FDFE62C914EA6D88085A3 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9872A5B618EE419997B35479A9204B /* ResponseSerialization.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C1C2B0BFBC04F625C38ED6225B8CFF4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D8199C20C1BE5F5BCDBC8F8CB4BF089;
+			remoteInfo = "Alamofire-iOS";
+		};
+		F85B85853AF1503202E9A7831AF56240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 173E4104E4F2CE5ECC896A154802C6D5;
+			remoteInfo = "Alamofire-watchOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		016AE2F2117F16825B2879AB1277FB8D /* Alamofire-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Alamofire-iOS.modulemap"; sourceTree = "<group>"; };
+		0330668936B996A62F2C65041B6BE3C0 /* Pods-Currency-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Currency-resources.sh"; sourceTree = "<group>"; };
+		076293A8905C9AD1ABD02BAA9D7C064E /* Pods_CurrencyWatchApp_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CurrencyWatchApp_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		07B2964CF92DE4DBAE198CD448DCE127 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12BBA44D2F62396DA3FE5890E33D5846 /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
+		1BB42E210F09FD8335D20B9894A1CA7B /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		2119F601A4BC0EBC054DC741DEDC56A6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		250292A232DB7385C4AC3E90CC06690F /* Pods-CurrencyWatchApp Extension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CurrencyWatchApp Extension-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2DE3B5C2A900E3F0E1DABA1D4E65E43D /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		2E9872A5B618EE419997B35479A9204B /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		3D1BCB12BACEE2AE38ADAE62E0839EEA /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		40387F9126660225C9BB522CDC4F87FA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Alamofire-watchOS/Info.plist"; sourceTree = "<group>"; };
+		43A9C70760A1920A514B9185C550183D /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
+		4449B27153C57059AAC583C99337D762 /* Pods-CurrencyWatchApp Extension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-CurrencyWatchApp Extension.modulemap"; sourceTree = "<group>"; };
+		506B0F72ED1E868A4FBA5D9464760BFC /* Alamofire-watchOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Alamofire-watchOS-dummy.m"; path = "../Alamofire-watchOS/Alamofire-watchOS-dummy.m"; sourceTree = "<group>"; };
+		53613B749F21A58B3137E85E0C67C117 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		57530B85A6A10A9B19C5CFF88003AB21 /* Pods-Currency-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Currency-acknowledgements.plist"; sourceTree = "<group>"; };
+		5A5A0B21A842A4F65052BD1225D620ED /* Pods-CurrencyWatchApp Extension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CurrencyWatchApp Extension-acknowledgements.plist"; sourceTree = "<group>"; };
+		658841BB6C608C05371200FCDAE69740 /* Pods-Currency-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Currency-umbrella.h"; sourceTree = "<group>"; };
+		6C38CE4B8105FB62E919D6C898B4C79E /* Pods-CurrencyWatchApp Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CurrencyWatchApp Extension.release.xcconfig"; sourceTree = "<group>"; };
+		6FCD194AA22BF0FEAA308CCAAE6DBB48 /* Pods-Currency-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Currency-dummy.m"; sourceTree = "<group>"; };
+		718A4767F8D70BC69A908AC5A2D36C97 /* Alamofire-watchOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Alamofire-watchOS.modulemap"; path = "../Alamofire-watchOS/Alamofire-watchOS.modulemap"; sourceTree = "<group>"; };
+		76720B026417625FB62285B73CECF0BF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS3.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7C49B30D83DB2362C4A3A8F9DC40C70A /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		8500FED4F64E03C0115E8D72F9EF3DAC /* Alamofire-iOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Alamofire-iOS.xcconfig"; sourceTree = "<group>"; };
+		87CDD6BB586D4B4DECDD4B34CE75DDCD /* Alamofire-watchOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Alamofire-watchOS-prefix.pch"; path = "../Alamofire-watchOS/Alamofire-watchOS-prefix.pch"; sourceTree = "<group>"; };
+		8AE84125AF7338A03F6F37600DDDD615 /* Pods-Currency-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Currency-acknowledgements.markdown"; sourceTree = "<group>"; };
+		90F5E0CFC384D3F875984C7232231A66 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
+		92C8684ACEC84C41AA3A37714B7B849B /* Alamofire-watchOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Alamofire-watchOS-umbrella.h"; path = "../Alamofire-watchOS/Alamofire-watchOS-umbrella.h"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		95807F3EA73452FD78301800DC43CBC4 /* Alamofire-watchOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Alamofire-watchOS.xcconfig"; path = "../Alamofire-watchOS/Alamofire-watchOS.xcconfig"; sourceTree = "<group>"; };
+		99062DF20BEF8103CAFD94AE34796686 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A329BE307601DA695B3DDA45399BB90 /* Pods-CurrencyWatchApp Extension-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CurrencyWatchApp Extension-frameworks.sh"; sourceTree = "<group>"; };
+		9C968E0CA3DCE82E1C524B2113DCA657 /* Pods-Currency.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Currency.debug.xcconfig"; sourceTree = "<group>"; };
+		A18E30F9449273E97AF1392571D2AA50 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		AF3338897A717B97A184031D81A8889C /* Pods-CurrencyWatchApp Extension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CurrencyWatchApp Extension-umbrella.h"; sourceTree = "<group>"; };
+		B51E42EB14C0F2D87AF84BD5093E5C97 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		B611CF612766299984326B5B9631EDAA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B899ECF21191C03E648F2FF5D27CB5AF /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
+		BC6E817385E07697A496B3E35A9ED84E /* Pods-CurrencyWatchApp Extension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CurrencyWatchApp Extension-dummy.m"; sourceTree = "<group>"; };
+		C6C4CB24D005C44351675C806B14AC93 /* Pods_Currency.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Currency.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8D903AD5AAC4C06D9C278039302DE0C /* Pods-CurrencyWatchApp Extension-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CurrencyWatchApp Extension-resources.sh"; sourceTree = "<group>"; };
+		C947B4942679F4009223A4D89D5DD7D9 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
+		D0FDE7E6C756FE51216AA3F19811305B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D2621A9E1BFC8A44436E9282D50521F5 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		D2A20FB8F396BBEA3C3FC773C1EA3B98 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
+		D751A458AA5641124C85C881C128A0BB /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
+		DD9FE5FCE01188A481CB898DA27BA19A /* Alamofire-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-iOS-prefix.pch"; sourceTree = "<group>"; };
+		DF40CFF8C610B49000F2BE7A94577B2B /* Alamofire-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-iOS-umbrella.h"; sourceTree = "<group>"; };
+		E320961ACDD7753B0EA46C09860C5835 /* Pods-Currency-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Currency-frameworks.sh"; sourceTree = "<group>"; };
+		E66EB884CB760CBCC6A4A959AB844CC1 /* Pods-Currency.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Currency.release.xcconfig"; sourceTree = "<group>"; };
+		E6AD5A7D4D96D1A056FCF533530A53B9 /* Pods-Currency.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Currency.modulemap"; sourceTree = "<group>"; };
+		EA881D95944FF6C1D12617DE0FF5D17F /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
+		F2A0C92D0E92D1401DAEC96739E7E6FF /* Pods-CurrencyWatchApp Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CurrencyWatchApp Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		F3687611CC380E6B4B05D3304A537AF2 /* Alamofire-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-iOS-dummy.m"; sourceTree = "<group>"; };
+		F59DD309C9EA5CB8ED3346C752787713 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1449906E88F3B9A31DE87D21CCA0D15A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				588EE674CE0BEFD19F8D01A9E845C46A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		217B31634D80C9269ACCF923308FF906 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FBE152422B48924171CEBD382B780CB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BD0862587890EF0F76F2998A62ABB1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4295ADAEFAE817A0287D38A603A9573A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4596A768F8686618F14524F032A3E49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDC702B77200C1C9E8D2EFC296A8EBFB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		35F128EB69B6F7FB7DA93BBF6C130FAE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CF1AD8F17F0E11A638AC47644B14DFB5 /* Alamofire */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3E98D2958794824B55F5DD29976D9E8E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B46BC1A32F3FA7E5213654819A0873B2 /* Pods-Currency */,
+				FF7BAE2EB9A0BBD7BF481AF59A6F0E5F /* Pods-CurrencyWatchApp Extension */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		482EA88B9136A5A573514953C7FCB52D /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D0FDE7E6C756FE51216AA3F19811305B /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5B4251928247F00782E024F3133B499F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				016AE2F2117F16825B2879AB1277FB8D /* Alamofire-iOS.modulemap */,
+				8500FED4F64E03C0115E8D72F9EF3DAC /* Alamofire-iOS.xcconfig */,
+				F3687611CC380E6B4B05D3304A537AF2 /* Alamofire-iOS-dummy.m */,
+				DD9FE5FCE01188A481CB898DA27BA19A /* Alamofire-iOS-prefix.pch */,
+				DF40CFF8C610B49000F2BE7A94577B2B /* Alamofire-iOS-umbrella.h */,
+				718A4767F8D70BC69A908AC5A2D36C97 /* Alamofire-watchOS.modulemap */,
+				95807F3EA73452FD78301800DC43CBC4 /* Alamofire-watchOS.xcconfig */,
+				506B0F72ED1E868A4FBA5D9464760BFC /* Alamofire-watchOS-dummy.m */,
+				87CDD6BB586D4B4DECDD4B34CE75DDCD /* Alamofire-watchOS-prefix.pch */,
+				92C8684ACEC84C41AA3A37714B7B849B /* Alamofire-watchOS-umbrella.h */,
+				2119F601A4BC0EBC054DC741DEDC56A6 /* Info.plist */,
+				40387F9126660225C9BB522CDC4F87FA /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Alamofire-iOS";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				8F91EE078EA3977443D1BDC2601132EF /* Frameworks */,
+				35F128EB69B6F7FB7DA93BBF6C130FAE /* Pods */,
+				FB8C7F368E065F788D4280A1E73BF42D /* Products */,
+				3E98D2958794824B55F5DD29976D9E8E /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8F91EE078EA3977443D1BDC2601132EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				482EA88B9136A5A573514953C7FCB52D /* iOS */,
+				FD9E2CBABDA1AB35BAD3C3F041262069 /* watchOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B46BC1A32F3FA7E5213654819A0873B2 /* Pods-Currency */ = {
+			isa = PBXGroup;
+			children = (
+				B611CF612766299984326B5B9631EDAA /* Info.plist */,
+				E6AD5A7D4D96D1A056FCF533530A53B9 /* Pods-Currency.modulemap */,
+				8AE84125AF7338A03F6F37600DDDD615 /* Pods-Currency-acknowledgements.markdown */,
+				57530B85A6A10A9B19C5CFF88003AB21 /* Pods-Currency-acknowledgements.plist */,
+				6FCD194AA22BF0FEAA308CCAAE6DBB48 /* Pods-Currency-dummy.m */,
+				E320961ACDD7753B0EA46C09860C5835 /* Pods-Currency-frameworks.sh */,
+				0330668936B996A62F2C65041B6BE3C0 /* Pods-Currency-resources.sh */,
+				658841BB6C608C05371200FCDAE69740 /* Pods-Currency-umbrella.h */,
+				9C968E0CA3DCE82E1C524B2113DCA657 /* Pods-Currency.debug.xcconfig */,
+				E66EB884CB760CBCC6A4A959AB844CC1 /* Pods-Currency.release.xcconfig */,
+			);
+			name = "Pods-Currency";
+			path = "Target Support Files/Pods-Currency";
+			sourceTree = "<group>";
+		};
+		CF1AD8F17F0E11A638AC47644B14DFB5 /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				EA881D95944FF6C1D12617DE0FF5D17F /* AFError.swift */,
+				3D1BCB12BACEE2AE38ADAE62E0839EEA /* Alamofire.swift */,
+				B51E42EB14C0F2D87AF84BD5093E5C97 /* DispatchQueue+Alamofire.swift */,
+				90F5E0CFC384D3F875984C7232231A66 /* MultipartFormData.swift */,
+				A18E30F9449273E97AF1392571D2AA50 /* NetworkReachabilityManager.swift */,
+				D2A20FB8F396BBEA3C3FC773C1EA3B98 /* Notifications.swift */,
+				F59DD309C9EA5CB8ED3346C752787713 /* ParameterEncoding.swift */,
+				7C49B30D83DB2362C4A3A8F9DC40C70A /* Request.swift */,
+				2DE3B5C2A900E3F0E1DABA1D4E65E43D /* Response.swift */,
+				2E9872A5B618EE419997B35479A9204B /* ResponseSerialization.swift */,
+				C947B4942679F4009223A4D89D5DD7D9 /* Result.swift */,
+				1BB42E210F09FD8335D20B9894A1CA7B /* ServerTrustPolicy.swift */,
+				43A9C70760A1920A514B9185C550183D /* SessionDelegate.swift */,
+				D751A458AA5641124C85C881C128A0BB /* SessionManager.swift */,
+				B899ECF21191C03E648F2FF5D27CB5AF /* TaskDelegate.swift */,
+				12BBA44D2F62396DA3FE5890E33D5846 /* Timeline.swift */,
+				D2621A9E1BFC8A44436E9282D50521F5 /* Validation.swift */,
+				5B4251928247F00782E024F3133B499F /* Support Files */,
+			);
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		FB8C7F368E065F788D4280A1E73BF42D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				53613B749F21A58B3137E85E0C67C117 /* Alamofire.framework */,
+				99062DF20BEF8103CAFD94AE34796686 /* Alamofire.framework */,
+				C6C4CB24D005C44351675C806B14AC93 /* Pods_Currency.framework */,
+				076293A8905C9AD1ABD02BAA9D7C064E /* Pods_CurrencyWatchApp_Extension.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD9E2CBABDA1AB35BAD3C3F041262069 /* watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				76720B026417625FB62285B73CECF0BF /* Foundation.framework */,
+			);
+			name = watchOS;
+			sourceTree = "<group>";
+		};
+		FF7BAE2EB9A0BBD7BF481AF59A6F0E5F /* Pods-CurrencyWatchApp Extension */ = {
+			isa = PBXGroup;
+			children = (
+				07B2964CF92DE4DBAE198CD448DCE127 /* Info.plist */,
+				4449B27153C57059AAC583C99337D762 /* Pods-CurrencyWatchApp Extension.modulemap */,
+				250292A232DB7385C4AC3E90CC06690F /* Pods-CurrencyWatchApp Extension-acknowledgements.markdown */,
+				5A5A0B21A842A4F65052BD1225D620ED /* Pods-CurrencyWatchApp Extension-acknowledgements.plist */,
+				BC6E817385E07697A496B3E35A9ED84E /* Pods-CurrencyWatchApp Extension-dummy.m */,
+				9A329BE307601DA695B3DDA45399BB90 /* Pods-CurrencyWatchApp Extension-frameworks.sh */,
+				C8D903AD5AAC4C06D9C278039302DE0C /* Pods-CurrencyWatchApp Extension-resources.sh */,
+				AF3338897A717B97A184031D81A8889C /* Pods-CurrencyWatchApp Extension-umbrella.h */,
+				F2A0C92D0E92D1401DAEC96739E7E6FF /* Pods-CurrencyWatchApp Extension.debug.xcconfig */,
+				6C38CE4B8105FB62E919D6C898B4C79E /* Pods-CurrencyWatchApp Extension.release.xcconfig */,
+			);
+			name = "Pods-CurrencyWatchApp Extension";
+			path = "Target Support Files/Pods-CurrencyWatchApp Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		17E7CE437511A409730EC381E60FA457 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E35EF038EB66E52EE842E0FDD41EC794 /* Alamofire-watchOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B777914DB6176D8EB96BF6947AECA57 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41399A1E3D3BB00E5C3796A136800BB2 /* Alamofire-iOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FABFFC80450AB44078C8C0D7C689DDCF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6F56F27A8DC5A0C62C145FF027FC160 /* Pods-Currency-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFEB5E096563B31A20E26C4B1AB409AE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4855C43031E72220A3937326DA8127DB /* Pods-CurrencyWatchApp Extension-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		02A7D1266EF20CE28CC299D725E5E05C /* Pods-Currency */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A192B5C7D34F7264195A21EED9F07612 /* Build configuration list for PBXNativeTarget "Pods-Currency" */;
+			buildPhases = (
+				0636568C556102571503E44FDF5F2E32 /* Sources */,
+				7BD0862587890EF0F76F2998A62ABB1B /* Frameworks */,
+				FABFFC80450AB44078C8C0D7C689DDCF /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				08353A0352CD8611793F726466422A42 /* PBXTargetDependency */,
+			);
+			name = "Pods-Currency";
+			productName = "Pods-Currency";
+			productReference = C6C4CB24D005C44351675C806B14AC93 /* Pods_Currency.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		173E4104E4F2CE5ECC896A154802C6D5 /* Alamofire-watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68ED8EF66573E653E64F42C9AA769C83 /* Build configuration list for PBXNativeTarget "Alamofire-watchOS" */;
+			buildPhases = (
+				3723730E81A14B8E4784B5E5F240BC68 /* Sources */,
+				1449906E88F3B9A31DE87D21CCA0D15A /* Frameworks */,
+				17E7CE437511A409730EC381E60FA457 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Alamofire-watchOS";
+			productName = "Alamofire-watchOS";
+			productReference = 99062DF20BEF8103CAFD94AE34796686 /* Alamofire.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		26617F3075ABBC3EF0FF893B03F97EBF /* Pods-CurrencyWatchApp Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA6ED1D6B9A9F01A8069C0B6AE9A9ED4 /* Build configuration list for PBXNativeTarget "Pods-CurrencyWatchApp Extension" */;
+			buildPhases = (
+				CF6782493C40B915E83DA5AE4E2B355E /* Sources */,
+				217B31634D80C9269ACCF923308FF906 /* Frameworks */,
+				FFEB5E096563B31A20E26C4B1AB409AE /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D9792CAD4C9732A99823E40E289B7DC8 /* PBXTargetDependency */,
+			);
+			name = "Pods-CurrencyWatchApp Extension";
+			productName = "Pods-CurrencyWatchApp Extension";
+			productReference = 076293A8905C9AD1ABD02BAA9D7C064E /* Pods_CurrencyWatchApp_Extension.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4D8199C20C1BE5F5BCDBC8F8CB4BF089 /* Alamofire-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB92E599D179260C3F30F3C6F77933B7 /* Build configuration list for PBXNativeTarget "Alamofire-iOS" */;
+			buildPhases = (
+				1081308CCDA341D85FB28FDB2EB95ABE /* Sources */,
+				A4596A768F8686618F14524F032A3E49 /* Frameworks */,
+				4B777914DB6176D8EB96BF6947AECA57 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Alamofire-iOS";
+			productName = "Alamofire-iOS";
+			productReference = 53613B749F21A58B3137E85E0C67C117 /* Alamofire.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0920;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = FB8C7F368E065F788D4280A1E73BF42D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4D8199C20C1BE5F5BCDBC8F8CB4BF089 /* Alamofire-iOS */,
+				173E4104E4F2CE5ECC896A154802C6D5 /* Alamofire-watchOS */,
+				02A7D1266EF20CE28CC299D725E5E05C /* Pods-Currency */,
+				26617F3075ABBC3EF0FF893B03F97EBF /* Pods-CurrencyWatchApp Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0636568C556102571503E44FDF5F2E32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F21E4EF107A6868DCB6540519D96E289 /* Pods-Currency-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1081308CCDA341D85FB28FDB2EB95ABE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				610017AA401B43AB241D006B9C3D708C /* AFError.swift in Sources */,
+				2CE0939239CE7E003EABC740D3894CED /* Alamofire-iOS-dummy.m in Sources */,
+				703932EF779A74C0FAE64785346A0A3E /* Alamofire.swift in Sources */,
+				29563E581C50753801C2BD34435DB608 /* DispatchQueue+Alamofire.swift in Sources */,
+				03D07E2BF08D9F1D2DD35F601B870D03 /* MultipartFormData.swift in Sources */,
+				C08E9F09701B2FF36088560A0BA4233B /* NetworkReachabilityManager.swift in Sources */,
+				099297A0628BAC20F1F9F7C7E2D1552B /* Notifications.swift in Sources */,
+				A9F865046BCD50D82F21FC0CBDC46077 /* ParameterEncoding.swift in Sources */,
+				B9D4E4A35B95788AD61F64D550826424 /* Request.swift in Sources */,
+				D6F10F27E3C306B7607251E4058DB05B /* Response.swift in Sources */,
+				F9544C87AA1FDFE62C914EA6D88085A3 /* ResponseSerialization.swift in Sources */,
+				8FA936C50C1CD7B4EC196B167BA04B61 /* Result.swift in Sources */,
+				5819C72B6A933289591AF5E380AA981E /* ServerTrustPolicy.swift in Sources */,
+				5DF116EA39A8EB315EA65160D6BB9DF0 /* SessionDelegate.swift in Sources */,
+				663D3FEC91D38CF59AE2707944CB22CB /* SessionManager.swift in Sources */,
+				08BF56F2B8324E2E804B2467EAAC356B /* TaskDelegate.swift in Sources */,
+				4AD9400617A3C3E3E9FB8FAE8FDEF6EE /* Timeline.swift in Sources */,
+				A1BA28434ABC4D98872C9064A24AA18B /* Validation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3723730E81A14B8E4784B5E5F240BC68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				655B22C3C0C3C3F5AF19018976BA52FF /* AFError.swift in Sources */,
+				1FD137B9C8DB27E8B1758711A725BEB5 /* Alamofire-watchOS-dummy.m in Sources */,
+				4F211C953D923D5FD30F7BEE88F92CE4 /* Alamofire.swift in Sources */,
+				F80FDB230BB5B3766EC81B67FBC02560 /* DispatchQueue+Alamofire.swift in Sources */,
+				6A37DB55DEC5540FEA003571E3BB9824 /* MultipartFormData.swift in Sources */,
+				8FD7D6616022C01888557B8A0506FC97 /* NetworkReachabilityManager.swift in Sources */,
+				7D7A15C112C8E4A0C187A475A79C935D /* Notifications.swift in Sources */,
+				F4206355260A2D03E04176A2A8105C52 /* ParameterEncoding.swift in Sources */,
+				7FA3873EFD6607719939B02B560BFCF6 /* Request.swift in Sources */,
+				06E74605750CCD28617BFDB5AB766528 /* Response.swift in Sources */,
+				E2CA5AD7B62C296DA7B132619BD86640 /* ResponseSerialization.swift in Sources */,
+				555B0E86991BE8FEFCB0292F10437A22 /* Result.swift in Sources */,
+				E83194B1D952AA3C4D269B67327A5054 /* ServerTrustPolicy.swift in Sources */,
+				B068EE9DA7C493E5652BA4887207BA01 /* SessionDelegate.swift in Sources */,
+				4C8FF0FAFFBC0BB1AD72C30DBD06C17B /* SessionManager.swift in Sources */,
+				5991E162C47AFE360E7D5AE3A8EEBF89 /* TaskDelegate.swift in Sources */,
+				26A890304C5793BF8F1F16F290C22CB1 /* Timeline.swift in Sources */,
+				30E3A932E6C98BEF3CFBB612F0EF745C /* Validation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF6782493C40B915E83DA5AE4E2B355E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7BE36A3F287251ED0C5518E399C3F58 /* Pods-CurrencyWatchApp Extension-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		08353A0352CD8611793F726466422A42 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire-iOS";
+			target = 4D8199C20C1BE5F5BCDBC8F8CB4BF089 /* Alamofire-iOS */;
+			targetProxy = C1C2B0BFBC04F625C38ED6225B8CFF4E /* PBXContainerItemProxy */;
+		};
+		D9792CAD4C9732A99823E40E289B7DC8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire-watchOS";
+			target = 173E4104E4F2CE5ECC896A154802C6D5 /* Alamofire-watchOS */;
+			targetProxy = F85B85853AF1503202E9A7831AF56240 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0E6C4539E10839E967365D5245E3C294 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E66EB884CB760CBCC6A4A959AB844CC1 /* Pods-Currency.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Currency/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Currency/Pods-Currency.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Currency;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		38559988FB5EEB7EB928A40C2E29F5C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95807F3EA73452FD78301800DC43CBC4 /* Alamofire-watchOS.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire-watchOS/Alamofire-watchOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire-watchOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Alamofire-watchOS/Alamofire-watchOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		4950A1B8850DBBC8D8B9003866F96A96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C968E0CA3DCE82E1C524B2113DCA657 /* Pods-Currency.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Currency/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Currency/Pods-Currency.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Currency;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4FDF3B7D312CAB2B104838E5888E962E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				WATCHOS_DEPLOYMENT_TARGET = 4.0.0;
+			};
+			name = Debug;
+		};
+		7DEA67A7F1D66D4813478C196DAAF064 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95807F3EA73452FD78301800DC43CBC4 /* Alamofire-watchOS.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire-watchOS/Alamofire-watchOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire-watchOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Alamofire-watchOS/Alamofire-watchOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		D6487C4FAFF310BBC4F13C2097478211 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8500FED4F64E03C0115E8D72F9EF3DAC /* Alamofire-iOS.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire-iOS/Alamofire-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Alamofire-iOS/Alamofire-iOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E6E2CD97D06CC82379AC8C5532594D45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0.0;
+			};
+			name = Release;
+		};
+		F42DB0769F73C477C7CF0988E198DA24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C38CE4B8105FB62E919D6C898B4C79E /* Pods-CurrencyWatchApp Extension.release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-CurrencyWatchApp Extension/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CurrencyWatchApp Extension/Pods-CurrencyWatchApp Extension.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_CurrencyWatchApp_Extension;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 4.0.0;
+			};
+			name = Release;
+		};
+		F72405A0AF40D101DEE0200C5C6688A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2A0C92D0E92D1401DAEC96739E7E6FF /* Pods-CurrencyWatchApp Extension.debug.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-CurrencyWatchApp Extension/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CurrencyWatchApp Extension/Pods-CurrencyWatchApp Extension.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_CurrencyWatchApp_Extension;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 4.0.0;
+			};
+			name = Debug;
+		};
+		F945855C72E68F6013AE7783C9F076D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8500FED4F64E03C0115E8D72F9EF3DAC /* Alamofire-iOS.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire-iOS/Alamofire-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Alamofire-iOS/Alamofire-iOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FDF3B7D312CAB2B104838E5888E962E /* Debug */,
+				E6E2CD97D06CC82379AC8C5532594D45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68ED8EF66573E653E64F42C9AA769C83 /* Build configuration list for PBXNativeTarget "Alamofire-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DEA67A7F1D66D4813478C196DAAF064 /* Debug */,
+				38559988FB5EEB7EB928A40C2E29F5C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A192B5C7D34F7264195A21EED9F07612 /* Build configuration list for PBXNativeTarget "Pods-Currency" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4950A1B8850DBBC8D8B9003866F96A96 /* Debug */,
+				0E6C4539E10839E967365D5245E3C294 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA6ED1D6B9A9F01A8069C0B6AE9A9ED4 /* Build configuration list for PBXNativeTarget "Pods-CurrencyWatchApp Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F72405A0AF40D101DEE0200C5C6688A3 /* Debug */,
+				F42DB0769F73C477C7CF0988E198DA24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB92E599D179260C3F30F3C6F77933B7 /* Build configuration list for PBXNativeTarget "Alamofire-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F945855C72E68F6013AE7783C9F076D3 /* Debug */,
+				D6487C4FAFF310BBC4F13C2097478211 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

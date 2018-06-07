@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13771" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch42" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13756"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="CurrencyWatchApp" customModuleProvider="target">
+                    <items>
+                        <table alignment="left" id="U2j-ng-qj6">
+                            <items>
+                                <tableRow identifier="UpdatedRowController" selectable="NO" id="G7w-BX-bTy" customClass="UpdatedRowController" customModule="CurrencyWatchApp_Extension">
+                                    <group key="rootItem" width="1" height="20" alignment="left" id="6w3-W0-RfJ">
+                                        <items>
+                                            <label alignment="center" verticalAlignment="center" text="Updated: " id="csG-4W-lxT" userLabel="UpdatedLabel">
+                                                <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                            </label>
+                                        </items>
+                                        <color key="backgroundColor" red="0.40062618255615234" green="0.078217260539531708" blue="0.088700227439403534" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="updatedLabel" destination="csG-4W-lxT" id="uHZ-s9-CeQ"/>
+                                    </connections>
+                                </tableRow>
+                                <tableRow identifier="CurrencyRowController" selectable="NO" id="6U0-6Z-Asn" customClass="CurrencyRowController" customModule="CurrencyWatchApp_Extension">
+                                    <group key="rootItem" width="1" height="46" alignment="left" spacing="6" id="C3i-Kf-LPa">
+                                        <items>
+                                            <label alignment="left" verticalAlignment="center" text="USD" id="ymD-hp-JrY" userLabel="Title">
+                                                <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                            </label>
+                                            <group width="51" alignment="right" verticalAlignment="center" layout="vertical" spacing="0.0" id="xsu-1O-p1d">
+                                                <items>
+                                                    <label width="79" alignment="right" verticalAlignment="center" text="27.90" textAlignment="right" id="dmu-Lg-jDp" userLabel="RateBid"/>
+                                                    <label width="79" alignment="right" verticalAlignment="center" text="27.75" textAlignment="right" id="kkH-4g-pf5" userLabel="RateAsk"/>
+                                                </items>
+                                            </group>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="rateAskLabel" destination="kkH-4g-pf5" id="AJU-C7-Qay"/>
+                                        <outlet property="rateBidLabel" destination="dmu-Lg-jDp" id="qu6-9e-7Xt"/>
+                                        <outlet property="titleLabel" destination="ymD-hp-JrY" id="brK-iz-m0Y"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="U2j-ng-qj6" id="Ghc-TK-PQ9"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="CurrencyWatchApp" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+    </scenes>
+</document>

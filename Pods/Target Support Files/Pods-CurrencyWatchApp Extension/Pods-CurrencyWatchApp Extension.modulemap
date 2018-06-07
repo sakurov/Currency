@@ -1,0 +1,6 @@
+framework module Pods_CurrencyWatchApp_Extension {
+  umbrella header "Pods-CurrencyWatchApp Extension-umbrella.h"
+
+  export *
+  module * { export * }
+}
