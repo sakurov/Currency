@@ -7,5 +7,11 @@ pipeline {
                 checkout scm
             }
         }
+        
+        stage("Print echo") {
+            steps {
+                echo hola
+            }
+        }
     }
 }
