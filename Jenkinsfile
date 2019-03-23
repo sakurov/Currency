@@ -28,14 +28,6 @@ pipeline {
             }    
         }
     }
-    post {
-        success {
-            setBuildStatus("Build cocks", "PENDING");
-        }
-        failure {
-            setBuildStatus("Build fucked up", "SUCCESS");
-        }
-    }
 }
 
 void setBuildStatus(String message, String state) {
