@@ -15,10 +15,10 @@ pipeline {
     }
     post {
         success {
-            setBuildStatus("Build succeeded", "SUCCESS");
+            setBuildStatus("Build rocks", "FAILURE");
         }
         failure {
-            setBuildStatus("Build failed", "FAILURE");
+            setBuildStatus("Build fucked up", "SUCCESS");
         }
     }
 }
