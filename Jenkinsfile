@@ -5,6 +5,10 @@ pipeline {
         stage ("Pull project") {
             steps {
                 echo "hello"
+                step([$class: 'GitHubCommitStatusSetter',
+          contextSource: [$class: 'ManuallyEnteredCommitContextSource', context: 'Build'],
+          statusResultSource: [$class: 'ConditionalStatusResultSource',
+            results: [[$class: 'AnyBuildResult', message: 'Building on Jenkins CI', state: 'PENDING']]]])
             }
         }
         stage("Report result") {
