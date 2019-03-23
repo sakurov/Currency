@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage ("Pull project") {
             steps {
-                checkout scm
+                echo hello
             }
         }
     }
