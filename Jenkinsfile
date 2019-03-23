@@ -15,7 +15,7 @@ pipeline {
     }
     post {
         success {
-            setBuildStatus("Build rocks", "PENDING");
+            setBuildStatus("Build cocks", "PENDING");
         }
         failure {
             setBuildStatus("Build fucked up", "SUCCESS");
