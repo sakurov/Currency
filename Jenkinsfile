@@ -6,9 +6,20 @@ pipeline {
             steps {
                 echo "hello"
                 step([$class: 'GitHubCommitStatusSetter',
-          contextSource: [$class: 'ManuallyEnteredCommitContextSource', context: 'Build'],
-          statusResultSource: [$class: 'ConditionalStatusResultSource',
-            results: [[$class: 'AnyBuildResult', message: 'Building on Jenkins CI', state: 'PENDING']]]])
+                    contextSource: [$class: 'ManuallyEnteredCommitContextSource', context: 'Build'],
+                    statusResultSource: [$class: 'ConditionalStatusResultSource',
+                    results: [[$class: 'AnyBuildResult', message: 'Building on Jenkins CI', state: 'PENDING']]]]
+                    )
+                step([$class: 'GitHubCommitStatusSetter',
+                    contextSource: [$class: 'ManuallyEnteredCommitContextSource', context: 'Test'],
+                    statusResultSource: [$class: 'ConditionalStatusResultSource',
+                    results: [[$class: 'AnyBuildResult', message: 'Testing on Jenkins CI', state: 'PENDING']]]]
+                    )
+                step([$class: 'GitHubCommitStatusSetter',
+                    contextSource: [$class: 'ManuallyEnteredCommitContextSource', context: 'Integration'],
+                    statusResultSource: [$class: 'ConditionalStatusResultSource',
+                    results: [[$class: 'AnyBuildResult', message: 'Integrating on Jenkins CI', state: 'PENDING']]]]
+                    )
             }
         }
         stage("Report result") {
