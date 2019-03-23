@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage ("Pull project") {
             steps {
-                echo hello
+                echo "hello"
             }
         }
     }
