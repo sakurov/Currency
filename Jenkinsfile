@@ -6,7 +6,6 @@ pipeline {
             steps {
                 echo "hello"
                 setBuildStatus("Build cocks", "PENDING");
-                wait(100)
             }
         }
         stage("Report result") {
