@@ -5,7 +5,7 @@ pipeline {
         stage ("Pull project") {
             steps {
                 echo "hello"
-                setBuildStatus("Build cocks", "FAILURE");
+                setBuildStatus("Build cocks", "PENDING");
                 wait(100)
             }
         }
